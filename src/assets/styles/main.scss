@@ -1,0 +1,365 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 100%;
+    overflow-x: hidden;
+
+
+}
+
+
+.hero {
+    .hero-container {
+        width: 100%;
+        min-height: 100vh;
+        background-color: #e0f8f2;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 5%;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+        /* LEFT SIDE */
+        .hero-text {
+            width: 50%;
+
+            h1 {
+                font-size: 6.2rem;
+                line-height: 1.1;
+                font-weight: bold;
+                color: #111;
+
+                .highlight {
+                    color: #00897b;
+                    font-family: cursive;
+                }
+            }
+
+            p {
+                font-size: 1.1rem;
+                margin-top: -30px;
+                color: #444;
+            }
+
+            .hero-actions {
+                margin-top: 60px;
+                display: flex;
+                align-items: center;
+                gap: 20px;
+
+                .cta-btn {
+                    background: #ff5c00;
+                    color: white;
+                    padding: 20px 38px;
+                    border-radius: 8px;
+                    font-weight: 600;
+                    border: none;
+                    cursor: pointer;
+                    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+                }
+
+                .rating {
+                    font-size: 0.9rem;
+                    color: #555;
+                }
+            }
+        }
+
+        /* RIGHT SIDE */
+        .hero-image {
+            width: 40%;
+            position: relative;
+
+            #hero-image {
+                width: 100%;
+                transform: rotate(-10deg);
+            }
+
+            .floating-badge {
+                position: absolute;
+                top: 45%;
+                left: 6%;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                padding: 15px 25px;
+                background: #fff;
+                border-radius: 15px;
+                border: 2px solid black;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+                font-size: 1rem;
+                font-weight: 700;
+
+                .avatar {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+            }
+
+            .bottom-badge {
+                width: 220px;
+                height: 160px;
+                position: absolute;
+                background-color: #fff;
+                border-radius: 15px;
+                padding: 10px;
+                bottom: 0%;
+                right: 18%;
+                border: 2px solid black;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+
+                h3 {
+                    font-size: 0.8rem;
+                    color: #555;
+                    font-weight: 700;
+                }
+
+                p {
+                    font-size: 2rem;
+                    font-weight: bold;
+                    color: rgb(50, 50, 50);
+                    margin-top: -10px;
+                }
+
+                .bars {
+                    display: flex;
+                    gap: 4px;
+                    margin-top: 6px;
+                    justify-content: space-around;
+
+
+                    .bar {
+
+                        width: 35px;
+                        height: 80px;
+                        background: rgb(12, 191, 191);
+                        border-radius: 3px;
+                        margin-top: -25px;
+                        border: 2px solid black;
+                        border-radius: 12px;
+                        overflow: hidden;
+                    }
+
+                    // .inner-bar {
+                    //     height: 80px;
+                    //     width: 40px;
+                    //     background: rgb(66, 194, 194);
+                    //     border-top: 2px solid rgb(255, 255, 255);
+                    //     border-top-left-radius: 12px;
+                    //     border-top-right-radius: 12px;
+                    // }
+                }
+            }
+        }
+    }
+
+
+
+
+
+}
+
+
+// Brand section Page
+
+.trusted-section {
+
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    .container {
+        text-align: center;
+        max-width: 1300px;
+        margin: 0 auto;
+
+        h2 {
+            font-size: 5rem;
+            font-weight: 700;
+
+
+            span {
+                color: teal;
+                font-style: italic;
+            }
+        }
+
+        .brands {
+            display: flex;
+            justify-content: space-around;
+            gap: 40px;
+
+
+
+            .brand-card {
+                text-align: center;
+                padding: 10px;
+            }
+
+            p {
+                margin-top: 10px;
+                font-weight: 600;
+                font-size: 1.5rem;
+            }
+        }
+
+    }
+}
+
+
+//Dirct mail section
+
+.direct-mail {
+
+    min-height: 100vh; // full screen height
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f5fcfc; // halka grayish bg
+    padding: 50px 20px;
+
+
+    .container {
+        text-align: center;
+        margin: auto;
+        width: 100%;
+
+
+
+
+        h2 {
+            font-size: 4.3rem;
+            margin-bottom: 50px;
+
+            span {
+                color: #00a89d; // teal highlight
+                font-family: "Comic Sans MS", cursive; // thoda funky effect
+                font-weight: 500;
+            }
+        }
+
+        .status {
+
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+
+
+            .box1 {
+                height: 170px;
+                width: 300px;
+                padding: 10px;
+                margin: 5px;
+
+
+                h3 {
+                    font-size: 4rem;
+
+                }
+
+                p {
+                    font-size: 1rem;
+                }
+            }
+
+            .box2 {
+                height: 180px;
+                width: 300px;
+                padding: 10px;
+                margin: 5px;
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-end;
+                gap: 20px;
+
+
+                .bar-box1 {
+                    height: 200px;
+                    width: 100px;
+                    background-color: #ff5c00;
+                    display: flex;
+                    justify-content: flex-end;
+                    flex-direction: column;
+                    border-radius: 8px;
+                    box-shadow: 6px 6px;
+                    border: 2px solid black;
+
+                    h3 {
+                        font-size: 16px;
+                    }
+
+                }
+
+                .bar-box2 {
+                    height: 60px;
+                    width: 100px;
+                    background-color: #00ffe1;
+                    display: flex;
+                    justify-content: flex-end;
+                    flex-direction: column;
+                    border-radius: 8px;
+                    line-height: 1;
+                    box-shadow: 6px 6px;
+                    border: 2px solid black;
+
+
+
+                    h3 {
+                        font-size: 16px;
+                    }
+                }
+
+            }
+
+            .box3 {
+                height: 170px;
+                width: 300px;
+                padding: 10px;
+                margin: 5px;
+
+                h3 {
+                    font-size: 4rem;
+
+                }
+
+                p {
+                    font-size: 1rem;
+                }
+            }
+        }
+
+    }
+}
+
+
+// App testimonial 
+
+.apptestimonail-container {
+    height: 70vh;
+    width: 100%;
+    background-color: #fdf3ea;
+
+
+    .container {
+        max-width: 1200px;
+        text-align: center;
+        margin: auto;
+
+
+
+
+        h1 {
+            font-size: 5rem;
+            padding-top: 50px;
+
+        }
+    }
+}

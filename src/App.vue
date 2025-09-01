@@ -1,28 +1,30 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <HeroSection />
+    <BrandSection />
+    <DirectMail />
+    <AppTestimonial />
   </div>
 </template>
-
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
+import HeroSection from './components/HeroSection.vue';
+import BrandSection from './components/BrandSection.vue';
+import DirectMail from './components/DirectMail.vue';
+import AppTestimonial from './components/AppTestimonial.vue';
 
 export default {
+
   name: 'App',
   components: {
-    HelloWorld
+    HeroSection,
+    BrandSection,
+    DirectMail,
+    AppTestimonial
+
   }
 }
 </script>
+<style lang="">
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>
