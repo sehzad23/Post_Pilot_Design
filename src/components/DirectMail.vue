@@ -23,7 +23,7 @@
 
                     </div>
                     <div class="bar-box2">
-                        <h3>20% <br> <small>Mail</small></h3>
+                        <h3>20% <br> <small> Mail</small></h3>
                     </div>
 
                 </div>
