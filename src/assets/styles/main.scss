@@ -28,7 +28,7 @@ body {
             width: 50%;
 
             h1 {
-                font-size: 6.2rem;
+                font-size: clamp(2rem, 6vw, 6.2rem); // responsive heading
                 line-height: 1.1;
                 font-weight: bold;
                 color: #111;
@@ -40,7 +40,7 @@ body {
             }
 
             p {
-                font-size: 1.1rem;
+                font-size: clamp(0.9rem, 2vw, 1.1rem); // responsive paragraph
                 margin-top: 30px;
                 color: #444;
             }
@@ -63,7 +63,7 @@ body {
                 }
 
                 .rating {
-                    font-size: 0.9rem;
+                    font-size: clamp(0.7rem, 1.5vw, 0.9rem); // responsive small text
                     color: #555;
                 }
             }
@@ -91,7 +91,7 @@ body {
                 border-radius: 15px;
                 border: 2px solid black;
                 box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-                font-size: 1rem;
+                font-size: clamp(0.8rem, 2vw, 1rem); // responsive badge text
                 font-weight: 700;
 
                 .avatar {
@@ -116,13 +116,13 @@ body {
                 border-bottom-style: none;
 
                 h3 {
-                    font-size: 0.8rem;
+                    font-size: clamp(0.6rem, 1.5vw, 0.8rem);
                     color: #555;
                     font-weight: 700;
                 }
 
                 p {
-                    font-size: 2rem;
+                    font-size: clamp(1.2rem, 4vw, 2rem);
                     font-weight: bold;
                     color: rgb(50, 50, 50);
                     margin-top: -10px;
@@ -160,11 +160,45 @@ body {
         }
     }
 
-
-
-
-
 }
+
+
+@media(max-width:600px) {
+
+    .hero {
+
+        .hero-container {
+            padding-top: 50px;
+            width: 100%;
+            flex-direction: column;
+
+
+            .hero-text {
+                width: 100%;
+            }
+
+            .hero-actions {
+                display: block;
+                /* flex remove */
+                width: 100%;
+                flex-direction: column;
+
+                .cta-btn {
+
+                    width: 100%;
+
+
+
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
 
 
 // Brand section Page
