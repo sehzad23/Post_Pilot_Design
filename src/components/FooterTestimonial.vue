@@ -40,7 +40,13 @@ export default {
 
     data() {
         return {
-            n: [{ "name": "Sehzad", "username": "@sehzad" }, { "name": "Vraj", "username": "@vraj" }, { "name": "Chintan", "username": "@chintan" }]
+            n: [{ "name": "Sehzad", "username": "@sehzad" },
+            { "name": "Vraj", "username": "@vraj" },
+            { "name": "Chintan", "username": "@chintan" },
+            { "name": "Ruhaan", "username": "@ruhaan" },
+            { "name": "Arsalan", "username": "@arsalan" },
+
+            ]
         }
     },
 
